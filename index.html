@@ -10,16 +10,76 @@
     <header>
         <h1>Publicidad Inteligente</h1>
         <p>Impulsa tu creatividad publicitaria con el poder de la IA.</p>
+        <button onclick="scrollToSection('benefits')">¡Descubre los beneficios!</button>
     </header>
+
     <main>
-        <section>
+        <!-- Acerca del Proyecto -->
+        <section id="about">
             <h2>Acerca del Proyecto</h2>
-            <p>Publicidad Inteligente es un programa diseñado para ayudarte a crear campañas publicitarias de alto impacto.</p>
+            <p>Publicidad Inteligente es un programa diseñado para ayudarte a crear campañas publicitarias de alto impacto mediante herramientas de inteligencia artificial.</p>
+        </section>
+
+        <!-- Beneficios -->
+        <section id="benefits">
+            <h2>Beneficios</h2>
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <h3>Personalización</h3>
+                    <p>Campañas diseñadas para conectarse directamente con tu audiencia.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Optimización</h3>
+                    <p>Maximiza los resultados con estrategias basadas en datos.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Impacto</h3>
+                    <p>Genera anuncios creativos que captan la atención de tu público.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section id="gallery">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Ejemplo de campaña">
+                <img src="https://via.placeholder.com/300" alt="Estrategia publicitaria">
+                <img src="https://via.placeholder.com/300" alt="Creatividad e innovación">
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta? ¡Escríbenos!</p>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
+
     <footer>
+        <p>Síguenos en:</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
         <p>Contacto: <a href="mailto:info@publicidadinteligente.com">info@publicidadinteligente.com</a></p>
     </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
-
